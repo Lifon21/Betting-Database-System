@@ -1,0 +1,87 @@
+-Login Screen
+Has to FETCH user data from Users table to check if password and email match
+
+-Sign Up
+If no account exists, then user has to give details to sign up, note Username is not needed and should
+just be student email
+
+Then it has to send (INSERT) request to pending userdatabase (Can create new maybe)
+
+-Std Main Screen
+Needs new screen for settings where user details can be changed
+
+Needs to FETCH balance of user
+
+Needs to connect to all other screens
+
+-Makes Bets
+FETCH Events,Odds
+
+INSERT into Bets
+
+-My Bets
+FETCH Bets
+display in list
+Search Function using certain criteria
+
+-Tasks Screen
+FETCH Available Tasks
+
+OPEN Upload Task
+
+-Upload Task
+Gets chosen task from previous screen
+FETCHES Tasks
+INSERTS into Appending task table(Maybe New)
+
+-Task Progress
+FETCHES Tasks done by student
+
+Can search using various criteria
+
+-Shop
+FETCHES data from User table, checks how much balance
+FETCHES data from items table
+search functions for items
+
+If bought, INSERTS data into Order(NEW) table
+
+-Admin Main Screen
+Essentially the same as std but needs a new balance icon
+
+-Approve student
+FETCHES data from pending request table
+INSERTS into Users table, deciding whether to make them admin or not
+
+-Approved student
+FETCHES data from users table
+Updates into Users table, making them admin or banning them
+
+-Approve Tasks
+FETCHES data from pending tasks table
+OPENS view task approval sceen to see task in more detail
+
+-View Task approval
+FETCHES data from pending tasks table
+INSERTS into Done Tasks table(NEW), with reward
+UPDATES Users table to reflect new balance in student
+
+-Task History
+FETCHES Data from done tasks
+OPENS View Task History table
+
+-View Task History
+FETCHES data from Done Tasks table, giving context to each task
+
+-Add Betting Events
+INSERTS Data into Events table
+will figure out the specifics later
+
+-Modify Shop
+Can be used to update or insert new values into Shop table, OPENS two new boxes
+
+-Updata items
+FETCHES details from Shop table for each item, and can be used to UPDATE accordingly
+
+-New items
+INSERTS new items into Shop table
